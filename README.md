@@ -4,6 +4,8 @@
 
 > Website pengolahan waktu tayang film menggunakan framework Express yang terintegrasi dengan MongoDB.
 
+[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)
+
 ### Dependencies yang digunakan:
 
 1. bcrypt: ^3.0.7,

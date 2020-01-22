@@ -1,0 +1,40 @@
+<% include ../header %>
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th></th>
+        <th></th>
+        <th colspan="2">
+          <a href="/movies/create" class="btn btn-primary btn-block">Add Movies</a>
+        </th>
+      </tr>
+    </thead>
+    <% for(let data of ListMovies){ %>
+      <tbody>
+        <tr>
+          <td><h5><%= data.name %></h5></td>
+          <td>Tanggal Tayang: <%= data.released_on %></td>
+          <td>
+            <a href="movies/update/<%= data.id %>" class="btn btn-success" style="width:100px">Edit</a>
+          </td>
+          <td>
+            <a class="btn btn-danger" data-toggle="collapse" href="#data<%= data.id %>" role="button" aria-expanded="false" aria-controls="collapseExample" style="width:100px">
+              Delete
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div class="collapse" id="data<%= data.id %>">
+              <div class="card card-body">
+                <p>Apakah Anda Yakin Untuk Menghapus<b> <%= data.name %> </b>?</p>
+                <a href="movies/delete/<%= data.id %>" class="btn btn-danger">Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    <% } %>
+  </table>
+</div>

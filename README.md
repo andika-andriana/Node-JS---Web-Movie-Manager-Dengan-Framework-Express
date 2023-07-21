@@ -30,7 +30,3 @@
 - Extract folder
 - Install dependencies : `npm install` atau `yarn install`
 - Jalankan aplikasi : `npm start`
-
-### Live Preview:
-
-[Movie Manager](https://andikaandriana-moviemanager.herokuapp.com/)
